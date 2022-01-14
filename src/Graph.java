@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Graph {
@@ -70,8 +69,11 @@ public class Graph {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (String v : vertices()){
-            sb.append(v + " : " + );
+            sb.append(v + " : ");
+            for (String adj : adjacentTo(v))
+                sb.append(adj + " ");
+            sb.append("\n");
         }
-        return "";
+        return sb.toString();
     }
 }
