@@ -18,8 +18,8 @@ public class GraphRunner {
         while (true){
             System.out.println("Type actor name :: ");
             String actor = sc.nextLine();
-            System.out.println("here's a list of movies " + actor + " acted in:");
-            m.actorList(actor);
+            System.out.println("\nhere's a list of movies \"" + actor + "\" acted in:");
+            System.out.println( m.actorList(actor) );
 
         }
 

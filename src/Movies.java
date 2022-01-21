@@ -32,8 +32,8 @@ public class Movies extends Graph{
             //sb.append(v + " : ");
             if (Objects.equals(v, actor)){
                 for (String adj : adjacentTo(v)){
-                    System.out.println(adj);
-                    sb.append(adj + " ");
+                    //System.out.println(adj);
+                    sb.append(adj + "\n");
                 }
             }
             //sb.append("\n");
