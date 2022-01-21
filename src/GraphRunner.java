@@ -18,9 +18,7 @@ public class GraphRunner {
         while (true){
             System.out.println("Type actor name :: ");
             String actor = sc.nextLine();
-            /*for (String adj : g.adjacentTo(actor))
-                System.out.println(adj);
-            System.out.println();*/
+            System.out.println("here's a list of movies " + actor + " acted in:");
             m.actorList(actor);
 
         }
